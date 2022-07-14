@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Dz-tg-bWr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Next View Controller-->
+        <scene sceneID="IgC-7n-Qo2">
+            <objects>
+                <viewController storyboardIdentifier="Next" id="8Dz-tg-bWr" customClass="NextViewController" customModule="navigation_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFX-zT-yry">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRI-qy-R3a">
+                                <rect key="frame" x="168.5" y="432.5" width="77.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="I0N-1q-BmS"/>
+                                    <constraint firstAttribute="width" constant="77.5" id="ViK-KK-NLU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go back"/>
+                                <connections>
+                                    <action selector="goBackButton:" destination="LHZ-TN-4ZO" eventType="touchUpInside" id="41M-A0-Of0"/>
+                                    <action selector="goBackButton:" destination="8Dz-tg-bWr" eventType="touchUpInside" id="J8c-NM-m5G"/>
+                                    <action selector="soBack:" destination="LHZ-TN-4ZO" eventType="touchUpInside" id="Og6-bd-7uN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UKz-d0-qq4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oRI-qy-R3a" firstAttribute="centerY" secondItem="AFX-zT-yry" secondAttribute="centerY" id="Pbz-Ik-vZY"/>
+                            <constraint firstItem="oRI-qy-R3a" firstAttribute="centerX" secondItem="AFX-zT-yry" secondAttribute="centerX" id="Vbr-fo-GLn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="s1l-yI-erx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJc-cp-GFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="LHZ-TN-4ZO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
